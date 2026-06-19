@@ -17,6 +17,17 @@
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+body.light-mode {
+    --bg-main: #F8FAFC;
+    --bg-secondary: #FFFFFF;
+    --text-primary: #0F172A;
+    --text-secondary: #475569;
+    --accent-primary: #4F46E5;
+    --accent-secondary: #7C3AED;
+    --glass-bg: rgba(255, 255, 255, 0.7);
+    --glass-border: rgba(0, 0, 0, 0.1);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -111,7 +122,26 @@ h1, h2, h3, h4 {
 .nav-links {
     list-style: none;
     display: flex;
+    align-items: center;
     gap: 2rem;
+}
+
+.theme-toggle {
+    background: transparent;
+    border: none;
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: var(--transition);
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme-toggle:hover {
+    color: var(--accent-primary);
+    transform: scale(1.1);
 }
 
 .nav-links a {
