@@ -3,180 +3,205 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zain Tahir — Flutter Engineer</title>
-    <meta name="description" content="Portfolio of Zain Tahir, a professional Flutter developer specializing in high-performance cross-platform applications.">
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Zain Tahir - Professional Flutter Developer Portfolio showcasing mobile, web, and desktop applications.">
+    <title>Zain Tahir | Flutter Developer Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
 
-    <!-- Noise Texture Overlay -->
-    <div class="noise-overlay"></div>
-    <div class="ambient-glow"></div>
-    
-    <!-- Custom Cursor -->
-    <div class="custom-cursor" id="custom-cursor"></div>
-
-    <!-- Navigation -->
-    <nav>
-        <div class="logo">Zain Tahir.</div>
-        <div class="nav-links">
-            <a href="#work" class="hover-target">Work</a>
-            <a href="#about" class="hover-target">About</a>
-            <a href="#contact" class="hover-target">Contact</a>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="hero-content reveal">
-            <h1>Engineering digital <br>experiences.</h1>
-            <p class="hero-subtitle">I build high-performance, cross-platform applications with Flutter. Focusing on fluid animations, robust architecture, and pixel-perfect design.</p>
-        </div>
+    <header>
+        <nav class="navbar">
+            <div class="logo">ZT<span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Projects Section (Bento Grid) -->
-    <section id="work" class="projects-section">
-        <h2 class="section-title reveal">Selected Work</h2>
-        
-        <div class="bento-grid">
-            
-            <!-- Project 1: Ustaad -->
-            <a href="https://github.com/zaintahir2025/ustaad-agentic-service-app" target="_blank" class="bento-item bento-large hover-target reveal">
-                <div class="project-content">
-                    <h3>Ustaad Agentic Service App</h3>
-                    <p>A sophisticated mobile platform leveraging agentic AI services. Features intricate state management and complex API integrations for a seamless user experience.</p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">Flutter</span>
-                        <span class="tech-tag">Agentic AI</span>
-                        <span class="tech-tag">Dart</span>
-                    </div>
-                </div>
-            </a>
-
-            <!-- Project 2: Voxora -->
-            <a href="https://github.com/zaintahir2025/voxora-social-voice-chat" target="_blank" class="bento-item bento-tall hover-target reveal">
-                <div class="project-content">
-                    <h3>Voxora</h3>
-                    <p>Real-time social voice chat application enabling instantaneous audio communication with WebRTC.</p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">WebRTC</span>
-                        <span class="tech-tag">Sockets</span>
-                    </div>
-                </div>
-            </a>
-
-            <!-- Project 3: CGPA Calculator -->
-            <a href="https://zaintahir2025.github.io/cgpa-calculator/" target="_blank" class="bento-item hover-target reveal">
-                <div class="project-content">
-                    <h3>CGPA Calculator</h3>
-                    <p>A fluid, highly interactive academic tool.</p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">UI/UX</span>
-                    </div>
-                </div>
-            </a>
-
-            <!-- Project 4: Hangman Pro -->
-            <a href="https://zaintahir2025.github.io/hangman-pro/" target="_blank" class="bento-item hover-target reveal">
-                <div class="project-content">
-                    <h3>Hangman Pro</h3>
-                    <p>A beautifully animated game with complex state.</p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">Animations</span>
-                    </div>
-                </div>
-            </a>
-
-            <!-- Project 5: Inkwell -->
-            <a href="https://zaintahir2025.github.io/blog_app/" target="_blank" class="bento-item bento-wide hover-target reveal">
-                <div class="project-content">
-                    <h3>Inkwell</h3>
-                    <p>A full-stack blogging platform with Supabase backend, Riverpod state management, and real-time database synchronization.</p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">Supabase</span>
-                        <span class="tech-tag">Riverpod</span>
-                        <span class="tech-tag">GoRouter</span>
-                    </div>
-                </div>
-            </a>
-
-            <!-- Project 6: Budget OS -->
-            <a href="https://zaintahir2025.github.io/budget-os-app/" target="_blank" class="bento-item bento-wide hover-target reveal">
-                <div class="project-content">
-                    <h3>BudgetOS</h3>
-                    <p>An elegant, offline-first personal finance tracker utilizing Hive for rapid local storage and custom charting for data visualization.</p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">Hive</span>
-                        <span class="tech-tag">Charts</span>
-                        <span class="tech-tag">Finance</span>
-                    </div>
-                </div>
-            </a>
-
-            <!-- Project 7: Embrace -->
-            <a href="https://zaintahir2025.github.io/embrace-app/" target="_blank" class="bento-item bento-large hover-target reveal">
-                <div class="project-content">
-                    <h3>Embrace</h3>
-                    <p>A secure, biometric-locked journaling application featuring offline SQLite persistence, a masonry grid feed, and dynamic light/dark theming.</p>
-                    <div class="tech-stack">
-                        <span class="tech-tag">GetX</span>
-                        <span class="tech-tag">SQLite</span>
-                        <span class="tech-tag">Local Auth</span>
-                        <span class="tech-tag">Material 3</span>
-                    </div>
-                </div>
-            </a>
-
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about-section">
-        <h2 class="section-title reveal">About Me</h2>
-        <div class="about-grid">
-            <div class="about-text reveal">
-                <p>I am a software engineer focused on building robust, scalable, and visually stunning applications using Flutter and Dart.</p>
-                <p>With a deep understanding of reactive state management, offline-first architectures, and complex API integrations, I bridge the gap between aesthetic design and production-ready code.</p>
-            </div>
-            <div class="skills-container reveal">
-                <div class="skill-category">
-                    <h4>Core Technologies</h4>
-                    <div class="skill-list">
-                        <span class="skill-item">Flutter</span>
-                        <span class="skill-item">Dart</span>
-                        <span class="skill-item">Riverpod</span>
-                        <span class="skill-item">GetX</span>
-                        <span class="skill-item">BLoC</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h4>Backend & Architecture</h4>
-                    <div class="skill-list">
-                        <span class="skill-item">Supabase</span>
-                        <span class="skill-item">Firebase</span>
-                        <span class="skill-item">SQLite/Hive</span>
-                        <span class="skill-item">REST/WebSockets</span>
-                    </div>
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero fade-in">
+            <div class="hero-content">
+                <h2 class="greeting">Hello, I'm</h2>
+                <h1 class="name">Zain Tahir</h1>
+                <h3 class="role">Professional <span class="highlight">Flutter Developer</span></h3>
+                <p class="summary">
+                    I build high-performance, cross-platform applications for mobile, web, and desktop. From state management to real-time backends, I bring ideas to life with beautiful Material & Cupertino designs.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="https://github.com/zaintahir2025" target="_blank" class="btn btn-icon"><i class="fab fa-github"></i> GitHub</a>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Contact / Footer Section -->
-    <section id="contact" class="contact reveal">
-        <h2>Let's build something extraordinary.</h2>
-        <a href="mailto:contact@zaintahir.com" class="magnetic-btn hover-target">Get in touch</a>
-        
-        <div class="footer-bottom">
-            <span>&copy; 2026 Zain Tahir. All rights reserved.</span>
-            <div class="social-links">
-                <a href="https://github.com/zaintahir2025" target="_blank" class="hover-target">GitHub</a>
-                <a href="#" class="hover-target">LinkedIn</a>
-                <a href="#" class="hover-target">Twitter</a>
+            <div class="hero-image">
+                <div class="tech-stack-ring">
+                    <i class="fa-brands fa-flutter" style="color: #02569B; font-size: 5rem;"></i>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <script src="script.js"></script>
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="section-header fade-in">
+                <h2>Featured <span class="highlight">Projects</span></h2>
+                <p>Exploring complex architectures, robust state management, and seamless UX.</p>
+            </div>
+
+            <div class="projects-grid">
+                
+                <!-- Project 1 -->
+                <div class="project-card slide-up">
+                    <div class="project-content">
+                        <h3>Ustaad Agentic Service App</h3>
+                        <p>A production-minded service-booking app supporting multiple languages (English, Urdu) and featuring Supabase-backed workflow traces.</p>
+                        <div class="tags">
+                            <span class="tag">Flutter</span>
+                            <span class="tag">Supabase Auth</span>
+                            <span class="tag">NLP</span>
+                            <span class="tag">Workflow Traces</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/zaintahir2025/ustaad-agentic-service-app" target="_blank"><i class="fab fa-github"></i> Repository</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card slide-up">
+                    <div class="project-content">
+                        <h3>Voxora Social Voice Chat</h3>
+                        <p>Next-gen cross-platform social networking app merging modern feeds with low-latency WebRTC voice calling and multiplayer games.</p>
+                        <div class="tags">
+                            <span class="tag">Flutter</span>
+                            <span class="tag">Supabase</span>
+                            <span class="tag">WebRTC</span>
+                            <span class="tag">Multiplayer Games</span>
+                            <span class="tag">State Management</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/zaintahir2025/voxora-social-voice-chat" target="_blank"><i class="fab fa-github"></i> Repository</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card slide-up">
+                    <div class="project-content">
+                        <h3>Inkwell (Blog App)</h3>
+                        <p>A highly polished, responsive blogging platform optimized for readability and content creation across mobile, web, and desktop.</p>
+                        <div class="tags">
+                            <span class="tag">Flutter</span>
+                            <span class="tag">Cross-Platform</span>
+                            <span class="tag">Responsive UI</span>
+                            <span class="tag">Theming</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/zaintahir2025/blog_app" target="_blank"><i class="fab fa-github"></i> Repository</a>
+                            <a href="https://zaintahir2025.github.io/blog_app/" target="_blank" class="live-demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card slide-up">
+                    <div class="project-content">
+                        <h3>Budget OS</h3>
+                        <p>A comprehensive personal finance management tool featuring offline-first storage and PDF analytics integration.</p>
+                        <div class="tags">
+                            <span class="tag">Flutter</span>
+                            <span class="tag">Firebase Firestore</span>
+                            <span class="tag">Hive Storage</span>
+                            <span class="tag">PDF Analytics</span>
+                            <span class="tag">Security</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/zaintahir2025/budget-os-app" target="_blank"><i class="fab fa-github"></i> Repository</a>
+                            <a href="https://zaintahir2025.github.io/budget-os-app/" target="_blank" class="live-demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card slide-up">
+                    <div class="project-content">
+                        <h3>Embrace</h3>
+                        <p>A high-performance journaling ecosystem designed with Material 3, focusing on an offline-first experience with local SQLite data.</p>
+                        <div class="tags">
+                            <span class="tag">Flutter</span>
+                            <span class="tag">GetX</span>
+                            <span class="tag">SQLite</span>
+                            <span class="tag">Material 3</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/zaintahir2025/embrace-app" target="_blank"><i class="fab fa-github"></i> Repository</a>
+                            <a href="https://zaintahir2025.github.io/embrace-app/" target="_blank" class="live-demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card slide-up">
+                    <div class="project-content">
+                        <h3>Hangman Pro</h3>
+                        <p>A fun and interactive classic Hangman game rebuilt in Flutter to demonstrate responsive design and state management capabilities.</p>
+                        <div class="tags">
+                            <span class="tag">Flutter</span>
+                            <span class="tag">Dart</span>
+                            <span class="tag">State Management</span>
+                            <span class="tag">Responsive</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/zaintahir2025/hangman-pro" target="_blank"><i class="fab fa-github"></i> Repository</a>
+                            <a href="https://zaintahir2025.github.io/hangman-pro/" target="_blank" class="live-demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7 -->
+                <div class="project-card slide-up">
+                    <div class="project-content">
+                        <h3>CGPA Calculator</h3>
+                        <p>A fast, utility-focused application aimed at helping students calculate their CGPA accurately using a clean, intuitive UI.</p>
+                        <div class="tags">
+                            <span class="tag">Flutter</span>
+                            <span class="tag">UI Layout</span>
+                            <span class="tag">Utility</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/zaintahir2025/cgpa-calculator" target="_blank"><i class="fab fa-github"></i> Repository</a>
+                            <a href="https://zaintahir2025.github.io/cgpa-calculator/" target="_blank" class="live-demo"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content" id="contact">
+            <h2>Let's build something amazing together.</h2>
+            <div class="socials">
+                <a href="https://github.com/zaintahir2025" target="_blank"><i class="fab fa-github"></i></a>
+                <!-- Add other social links like LinkedIn or Email if needed -->
+            </div>
+            <p>&copy; 2026 Zain Tahir. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
 </body>
 </html>
