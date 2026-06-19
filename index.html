@@ -3,669 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zain Tahir — Flutter Developer Portfolio</title>
-    <meta name="description" content="Professional portfolio of Zain Tahir, a Flutter developer specializing in cross-platform mobile, web, and desktop applications with modern architectures and stunning UIs.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Zain Tahir — Flutter Engineer</title>
+    <meta name="description" content="Portfolio of Zain Tahir, a professional Flutter developer specializing in high-performance cross-platform applications.">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Noise Texture Overlay -->
+    <div class="noise-overlay"></div>
+    <div class="ambient-glow"></div>
+    
+    <!-- Custom Cursor -->
+    <div class="custom-cursor" id="custom-cursor"></div>
+
     <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="#hero" class="nav-logo">
-                <span class="logo-bracket">&lt;</span>ZT<span class="logo-bracket">/&gt;</span>
-            </a>
-            <div class="nav-links" id="nav-links">
-                <a href="#hero" class="nav-link active">Home</a>
-                <a href="#about" class="nav-link">About</a>
-                <a href="#skills" class="nav-link">Skills</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </div>
-            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
-                <span></span><span></span><span></span>
-            </button>
+    <nav>
+        <div class="logo">Zain Tahir.</div>
+        <div class="nav-links">
+            <a href="#work" class="hover-target">Work</a>
+            <a href="#about" class="hover-target">About</a>
+            <a href="#contact" class="hover-target">Contact</a>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero" id="hero">
-        <div class="hero-bg-grid"></div>
-        <div class="hero-glow hero-glow-1"></div>
-        <div class="hero-glow hero-glow-2"></div>
-        <div class="hero-content">
-            <div class="hero-badge">
-                <span class="badge-dot"></span>
-                Available for freelance projects
-            </div>
-            <h1 class="hero-title">
-                <span class="hero-greeting">Hi, I'm</span>
-                <span class="hero-name">Zain Tahir</span>
-                <span class="hero-role">Flutter Developer</span>
-            </h1>
-            <p class="hero-description">
-                I craft high-performance, cross-platform applications with Flutter & Dart — 
-                from AI-powered service platforms and social networks to finance ecosystems and 
-                privacy-first journaling apps. Every pixel, every architecture decision, every line 
-                of code is engineered for production.
-            </p>
-            <div class="hero-actions">
-                <a href="#projects" class="btn btn-primary">
-                    <span>View My Work</span>
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
-                </a>
-                <a href="https://github.com/zaintahir2025" target="_blank" class="btn btn-ghost">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                    <span>GitHub</span>
-                </a>
-            </div>
-            <div class="hero-stats">
-                <div class="stat">
-                    <span class="stat-number" data-count="7">0</span>
-                    <span class="stat-label">Projects</span>
-                </div>
-                <div class="stat-divider"></div>
-                <div class="stat">
-                    <span class="stat-number" data-count="6">0</span>
-                    <span class="stat-label">Platforms</span>
-                </div>
-                <div class="stat-divider"></div>
-                <div class="stat">
-                    <span class="stat-number">10+</span>
-                    <span class="stat-label">Technologies</span>
-                </div>
-            </div>
+    <header class="hero">
+        <div class="hero-content reveal">
+            <h1>Engineering digital <br>experiences.</h1>
+            <p class="hero-subtitle">I build high-performance, cross-platform applications with Flutter. Focusing on fluid animations, robust architecture, and pixel-perfect design.</p>
         </div>
-        <div class="scroll-indicator">
-            <div class="scroll-line"></div>
+    </header>
+
+    <!-- Projects Section (Bento Grid) -->
+    <section id="work" class="projects-section">
+        <h2 class="section-title reveal">Selected Work</h2>
+        
+        <div class="bento-grid">
+            
+            <!-- Project 1: Ustaad -->
+            <a href="https://github.com/zaintahir2025/ustaad-agentic-service-app" target="_blank" class="bento-item bento-large hover-target reveal">
+                <div class="project-content">
+                    <h3>Ustaad Agentic Service App</h3>
+                    <p>A sophisticated mobile platform leveraging agentic AI services. Features intricate state management and complex API integrations for a seamless user experience.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Flutter</span>
+                        <span class="tech-tag">Agentic AI</span>
+                        <span class="tech-tag">Dart</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Project 2: Voxora -->
+            <a href="https://github.com/zaintahir2025/voxora-social-voice-chat" target="_blank" class="bento-item bento-tall hover-target reveal">
+                <div class="project-content">
+                    <h3>Voxora</h3>
+                    <p>Real-time social voice chat application enabling instantaneous audio communication with WebRTC.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">WebRTC</span>
+                        <span class="tech-tag">Sockets</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Project 3: CGPA Calculator -->
+            <a href="https://zaintahir2025.github.io/cgpa-calculator/" target="_blank" class="bento-item hover-target reveal">
+                <div class="project-content">
+                    <h3>CGPA Calculator</h3>
+                    <p>A fluid, highly interactive academic tool.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">UI/UX</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Project 4: Hangman Pro -->
+            <a href="https://zaintahir2025.github.io/hangman-pro/" target="_blank" class="bento-item hover-target reveal">
+                <div class="project-content">
+                    <h3>Hangman Pro</h3>
+                    <p>A beautifully animated game with complex state.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Animations</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Project 5: Inkwell -->
+            <a href="https://zaintahir2025.github.io/blog_app/" target="_blank" class="bento-item bento-wide hover-target reveal">
+                <div class="project-content">
+                    <h3>Inkwell</h3>
+                    <p>A full-stack blogging platform with Supabase backend, Riverpod state management, and real-time database synchronization.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Supabase</span>
+                        <span class="tech-tag">Riverpod</span>
+                        <span class="tech-tag">GoRouter</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Project 6: Budget OS -->
+            <a href="https://zaintahir2025.github.io/budget-os-app/" target="_blank" class="bento-item bento-wide hover-target reveal">
+                <div class="project-content">
+                    <h3>BudgetOS</h3>
+                    <p>An elegant, offline-first personal finance tracker utilizing Hive for rapid local storage and custom charting for data visualization.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Hive</span>
+                        <span class="tech-tag">Charts</span>
+                        <span class="tech-tag">Finance</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Project 7: Embrace -->
+            <a href="https://zaintahir2025.github.io/embrace-app/" target="_blank" class="bento-item bento-large hover-target reveal">
+                <div class="project-content">
+                    <h3>Embrace</h3>
+                    <p>A secure, biometric-locked journaling application featuring offline SQLite persistence, a masonry grid feed, and dynamic light/dark theming.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">GetX</span>
+                        <span class="tech-tag">SQLite</span>
+                        <span class="tech-tag">Local Auth</span>
+                        <span class="tech-tag">Material 3</span>
+                    </div>
+                </div>
+            </a>
+
         </div>
     </section>
 
     <!-- About Section -->
-    <section class="section" id="about">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">01 — About</span>
-                <h2 class="section-title">Building the Future<br>with Flutter</h2>
+    <section id="about" class="about-section">
+        <h2 class="section-title reveal">About Me</h2>
+        <div class="about-grid">
+            <div class="about-text reveal">
+                <p>I am a software engineer focused on building robust, scalable, and visually stunning applications using Flutter and Dart.</p>
+                <p>With a deep understanding of reactive state management, offline-first architectures, and complex API integrations, I bridge the gap between aesthetic design and production-ready code.</p>
             </div>
-            <div class="about-grid">
-                <div class="about-text">
-                    <p>I'm a <strong>Flutter developer</strong> from Pakistan with a passion for building cross-platform applications that are not just functional, but <em>beautiful</em> and <em>production-ready</em>.</p>
-                    <p>My projects span from <strong>AI-powered agentic service platforms</strong> with multilingual NLP to <strong>WebRTC-based social voice chat</strong> applications, from <strong>finance ecosystems</strong> with hybrid databases to <strong>privacy-first journaling</strong> apps with biometric security.</p>
-                    <p>I believe in clean architecture, scalable state management, responsive design across all form factors, and CI/CD pipelines that ensure every deployment is production-grade.</p>
+            <div class="skills-container reveal">
+                <div class="skill-category">
+                    <h4>Core Technologies</h4>
+                    <div class="skill-list">
+                        <span class="skill-item">Flutter</span>
+                        <span class="skill-item">Dart</span>
+                        <span class="skill-item">Riverpod</span>
+                        <span class="skill-item">GetX</span>
+                        <span class="skill-item">BLoC</span>
+                    </div>
                 </div>
-                <div class="about-cards">
-                    <div class="info-card">
-                        <div class="info-card-icon">🎯</div>
-                        <h3>Cross-Platform</h3>
-                        <p>Mobile, Web, Desktop — one codebase, six platforms</p>
-                    </div>
-                    <div class="info-card">
-                        <div class="info-card-icon">⚡</div>
-                        <h3>Production-Ready</h3>
-                        <p>CI/CD pipelines, automated testing, GitHub Actions</p>
-                    </div>
-                    <div class="info-card">
-                        <div class="info-card-icon">🏗️</div>
-                        <h3>Clean Architecture</h3>
-                        <p>MVCS, Riverpod, Provider, GetX — scalable patterns</p>
-                    </div>
-                    <div class="info-card">
-                        <div class="info-card-icon">🔐</div>
-                        <h3>Security-First</h3>
-                        <p>Biometric auth, RLS policies, encrypted storage</p>
+                <div class="skill-category">
+                    <h4>Backend & Architecture</h4>
+                    <div class="skill-list">
+                        <span class="skill-item">Supabase</span>
+                        <span class="skill-item">Firebase</span>
+                        <span class="skill-item">SQLite/Hive</span>
+                        <span class="skill-item">REST/WebSockets</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section class="section section-dark" id="skills">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">02 — Skills</span>
-                <h2 class="section-title">Technical Expertise</h2>
-            </div>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3 class="skill-category-title">Core</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Flutter</span>
-                        <span class="skill-tag">Dart</span>
-                        <span class="skill-tag">Material 3</span>
-                        <span class="skill-tag">Custom Painting</span>
-                        <span class="skill-tag">Responsive Design</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3 class="skill-category-title">State Management</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Riverpod</span>
-                        <span class="skill-tag">Provider</span>
-                        <span class="skill-tag">GetX</span>
-                        <span class="skill-tag">ChangeNotifier</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3 class="skill-category-title">Backend & Database</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Supabase</span>
-                        <span class="skill-tag">Firebase</span>
-                        <span class="skill-tag">Firestore</span>
-                        <span class="skill-tag">SQLite</span>
-                        <span class="skill-tag">Hive</span>
-                        <span class="skill-tag">PostgreSQL</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3 class="skill-category-title">Real-Time & APIs</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">WebRTC</span>
-                        <span class="skill-tag">WebSockets</span>
-                        <span class="skill-tag">REST APIs</span>
-                        <span class="skill-tag">Realtime Channels</span>
-                        <span class="skill-tag">SDP/ICE</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3 class="skill-category-title">DevOps & Tools</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">GitHub Actions</span>
-                        <span class="skill-tag">CI/CD</span>
-                        <span class="skill-tag">GitHub Pages</span>
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">WASM Build</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3 class="skill-category-title">Libraries & Packages</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">fl_chart</span>
-                        <span class="skill-tag">flutter_map</span>
-                        <span class="skill-tag">go_router</span>
-                        <span class="skill-tag">google_fonts</span>
-                        <span class="skill-tag">flutter_animate</span>
-                        <span class="skill-tag">cached_network_image</span>
-                        <span class="skill-tag">local_auth</span>
-                        <span class="skill-tag">pdf</span>
-                    </div>
-                </div>
+    <!-- Contact / Footer Section -->
+    <section id="contact" class="contact reveal">
+        <h2>Let's build something extraordinary.</h2>
+        <a href="mailto:contact@zaintahir.com" class="magnetic-btn hover-target">Get in touch</a>
+        
+        <div class="footer-bottom">
+            <span>&copy; 2026 Zain Tahir. All rights reserved.</span>
+            <div class="social-links">
+                <a href="https://github.com/zaintahir2025" target="_blank" class="hover-target">GitHub</a>
+                <a href="#" class="hover-target">LinkedIn</a>
+                <a href="#" class="hover-target">Twitter</a>
             </div>
         </div>
     </section>
-
-    <!-- Projects Section -->
-    <section class="section" id="projects">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">03 — Projects</span>
-                <h2 class="section-title">Featured Work</h2>
-                <p class="section-subtitle">A collection of production-grade Flutter applications showcasing diverse architectures, technologies, and problem domains.</p>
-            </div>
-
-            <!-- Project 1: Ustaad -->
-            <article class="project-card" id="project-ustaad">
-                <div class="project-header">
-                    <div class="project-number">01</div>
-                    <div class="project-meta">
-                        <span class="project-category">AI & Services</span>
-                        <span class="project-platform">Mobile · Web · Desktop</span>
-                    </div>
-                </div>
-                <h3 class="project-title">Ustaad — Agentic Service Platform</h3>
-                <p class="project-description">A production-minded service-booking app for Pakistan's informal economy. Ustaad uses natural language processing to understand service requests in English, Urdu, and Roman Urdu, then intelligently ranks nearby providers using a custom multi-factor scoring algorithm.</p>
-                
-                <div class="concepts-grid">
-                    <div class="concept">
-                        <h4>🤖 AI-Powered NLP Parser</h4>
-                        <p>Custom multilingual parser extracts service type, location, time, language, urgency, and confidence from natural language input — no LLM API key required.</p>
-                    </div>
-                    <div class="concept">
-                        <h4>📊 Multi-Factor Ranking Engine</h4>
-                        <p>Provider ranking weighs distance (haversine), availability, rating, reliability, completed jobs, urgency, and price to surface the best match.</p>
-                    </div>
-                    <div class="concept">
-                        <h4>🗺️ Free Map Stack</h4>
-                        <p>OpenStreetMap tiles via flutter_map, Nominatim for place search, OSRM for route/ETA estimates — with offline Islamabad sector fallbacks.</p>
-                    </div>
-                    <div class="concept">
-                        <h4>🔐 Supabase Backend</h4>
-                        <p>Supabase Auth with email confirmation, PostgreSQL with RLS policies, Storage for avatars, and structured workflow trace event logging.</p>
-                    </div>
-                    <div class="concept">
-                        <h4>🎤 Voice Input</h4>
-                        <p>Device speech recognition via speech_to_text — users can describe their service needs by voice in any supported language.</p>
-                    </div>
-                    <div class="concept">
-                        <h4>📱 Provider Architecture</h4>
-                        <p>Flutter Provider pattern with orchestration state, offline catalog fallback, booking lifecycle management, and saved professionals.</p>
-                    </div>
-                </div>
-
-                <div class="project-tech">
-                    <span class="tech-tag">Flutter</span>
-                    <span class="tech-tag">Dart</span>
-                    <span class="tech-tag">Supabase</span>
-                    <span class="tech-tag">Provider</span>
-                    <span class="tech-tag">flutter_map</span>
-                    <span class="tech-tag">speech_to_text</span>
-                    <span class="tech-tag">url_launcher</span>
-                    <span class="tech-tag">PostgreSQL</span>
-                    <span class="tech-tag">RLS Policies</span>
-                    <span class="tech-tag">GitHub Actions</span>
-                </div>
-
-                <div class="project-links">
-                    <a href="https://github.com/zaintahir2025/ustaad-agentic-service-app" target="_blank" class="project-link">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                        Source Code
-                    </a>
-                    <a href="https://zaintahir2025.github.io/ustaad-agentic-service-app/" target="_blank" class="project-link project-link-live">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
-                        Live Demo
-                    </a>
-                </div>
-            </article>
-
-            <!-- Project 2: Voxora -->
-            <article class="project-card" id="project-voxora">
-                <div class="project-header">
-                    <div class="project-number">02</div>
-                    <div class="project-meta">
-                        <span class="project-category">Social & Real-Time</span>
-                        <span class="project-platform">Mobile · Web · Desktop</span>
-                    </div>
-                </div>
-                <h3 class="project-title">Voxora — Social Voice Chat Network</h3>
-                <p class="project-description">An advanced social networking application merging modern social feeds, low-latency peer-to-peer WebRTC voice calling, and AI-driven multiplayer games into a single, cohesive flat-design UI — built entirely with Flutter and Supabase.</p>
-                
-                <div class="concepts-grid">
-                    <div class="concept">
-                        <h4>📡 WebRTC Peer-to-Peer Calling</h4>
-                        <p>Decentralized voice calling via flutter_webrtc with SDP offer/answer exchange, ICE candidate negotiation, and NAT traversal — using Supabase Realtime as the signaling server.</p>
-                    </div>
-                    <div class="concept">
-                        <h4>🧠 Minimax AI with Alpha-Beta Pruning</h4>
-                        <p>Chess and game AI opponents using the Minimax algorithm with heuristic board evaluation and alpha-beta pruning for optimal move selection at depth 3–4.</p>
-                    </div>
-                    <div class="concept">
-                        <h4>🏗️ MVCS Architecture</h4>
-                        <p>Model-View-Controller-Service pattern with Provider-based reactive state management. AppProvider for global state, BotGameProvider for game state machines.</p>
-                    </div>
-                    <div class="concept">
-                        <h4>🎨 Engineered Design System</h4>
-                        <p>Material 3 dynamic color schemes with elegant deep navy dark mode (#0B192C) and ultra-minimal light mode. Zero shadows — flat 1px borders for modern aesthetics.</p>
-                    </div>
-                    <div class="concept">
-                        <h4>📱 Responsive Breakpoints</h4>
-                        <p>Desktop sidebar layout vs. mobile BottomNavigationBar with MediaQuery breakpoint at 980px. Dynamic avatar fallbacks with graceful error handling.</p>
-                    </div>
-                    <div class="concept">
-                        <h4>🚀 CI/CD Pipeline</h4>
-                        <p>GitHub Actions workflow: flutter analyze as code quality gate → flutter build web (WASM) → deploy to GitHub Pages automatically on every push.</p>
-                    </div>
-                </div>
-
-                <div class="project-tech">
-                    <span class="tech-tag">Flutter</span>
-                    <span class="tech-tag">Dart</span>
-                    <span class="tech-tag">Supabase</span>
-                    <span class="tech-tag">WebRTC</span>
-                    <span class="tech-tag">Provider</span>
-                    <span class="tech-tag">flutter_webrtc</span>
-                    <span class="tech-tag">chess</span>
-                    <span class="tech-tag">Minimax Algorithm</span>
-                    <span class="tech-tag">Alpha-Beta Pruning</span>
-                    <span class="tech-tag">Material 3</span>
-                    <span class="tech-tag">GitHub Actions</span>
-                </div>
-
-                <div class="project-links">
-                    <a href="https://github.com/zaintahir2025/voxora-social-voice-chat" target="_blank" class="project-link">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                        Source Code
-                    </a>
-                    <a href="https://zaintahir2025.github.io/voxora-social-voice-chat/" target="_blank" class="project-link project-link-live">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
-                        Live Demo
-                    </a>
-                </div>
-            </article>
-
-            <!-- Project 3: Blog App / Inkwell -->
-            <article class="project-card" id="project-inkwell">
-                <div class="project-header">
-                    <div class="project-number">03</div>
-                    <div class="project-meta">
-                        <span class="project-category">Content & Social</span>
-                        <span class="project-platform">Mobile · Web · Desktop</span>
-                    </div>
-                </div>
-                <h3 class="project-title">Inkwell — Blogging Platform</h3>
-                <p class="project-description">A cross-platform Flutter blogging app focused on polished reading and writing experiences. Combines content creation, discovery, profile management, reading continuity, and optional social features — designed to feel intentional and professional, not a basic CRUD demo.</p>
-                
-                <div class="concepts-grid">
-                    <div class="concept">
-                        <h4>🏛️ Riverpod State Management</h4>
-                        <p>flutter_riverpod for app preferences, reading history, social state, and content flows — with feature-first architecture grouping UI, models, and providers by domain.</p>
-                    </div>
-                    <div class="concept">
-                        <h4>✍️ Writing Studio</h4>
-                        <p>Full authoring suite with markdown toolbar, live preview, font presets, inline image upload, autosave with Hive-based draft recovery, and publishing checklists.</p>
-                    </div>
-                    <div class="concept">
-                        <h4>💾 Hybrid Persistence</h4>
-                        <p>Supabase for auth, profiles, posts, likes, bookmarks, comments, and realtime updates. Hive for local caching, draft recovery, settings, and reading history.</p>
-                    </div>
-                    <div class="concept">
-                        <h4>📖 Reader Experience</h4>
-                        <p>Markdown rendering, adjustable text scale, reading progress tracking, continue-reading support, related stories, likes, bookmarks, and comments.</p>
-                    </div>
-                    <div class="concept">
-                        <h4>👥 Social Layer</h4>
-                        <p>Optional friend requests, accepted friendships, chat threads, direct messaging, and social notification badges — gracefully degrades without backend tables.</p>
-                    </div>
-                    <div class="concept">
-                        <h4>🧪 Comprehensive Testing</h4>
-                        <p>Widget and provider tests for regressions, formatting behavior, responsive UI stability, archive links, blog providers, comment models, and story markup.</p>
-                    </div>
-                </div>
-
-                <div class="project-tech">
-                    <span class="tech-tag">Flutter</span>
-                    <span class="tech-tag">Riverpod</span>
-                    <span class="tech-tag">go_router</span>
-                    <span class="tech-tag">Supabase</span>
-                    <span class="tech-tag">Hive</span>
-                    <span class="tech-tag">flutter_markdown</span>
-                    <span class="tech-tag">flutter_animate</span>
-                    <span class="tech-tag">cached_network_image</span>
-                    <span class="tech-tag">image_picker</span>
-                    <span class="tech-tag">google_fonts</span>
-                </div>
-
-                <div class="project-links">
-                    <a href="https://github.com/zaintahir2025/blog_app" target="_blank" class="project-link">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                        Source Code
-                    </a>
-                    <a href="https://zaintahir2025.github.io/blog_app/" target="_blank" class="project-link project-link-live">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
-                        Live Demo
-                    </a>
-                </div>
-            </article>
-
-            <!-- Project 4: CGPA Calculator -->
-            <article class="project-card" id="project-cgpa">
-                <div class="project-header">
-                    <div class="project-number">04</div>
-                    <div class="project-meta">
-                        <span class="project-category">Education & Analytics</span>
-                        <span class="project-platform">Mobile · Web · Desktop</span>
-                    </div>
-                </div>
-                <h3 class="project-title">CGPA Calculator — Academic Analytics</h3>
-                <p class="project-description">An intelligent cross-platform academic performance analyzer featuring a custom forecasting engine, responsive masonry layout, visual analytics with fl_chart, and professional transcript export capabilities — designed for students who want more than basic GPA math.</p>
-                
-                <div class="concepts-grid">
-                    <div class="concept">
-                        <h4>📈 Custom Forecasting Engine</h4>
-                        <p>Proprietary algorithm that predicts future CGPA based on historical semester data, grade trends, and credit-weighted calculations.</p>
-                    </div>
-                    <div class="concept">
-                        <h4>📊 Visual Analytics (fl_chart)</h4>
-                        <p>Interactive line charts, bar graphs, and trend visualizations powered by fl_chart — bringing academic data to life with smooth animations.</p>
-                    </div>
-                    <div class="concept">
-                        <h4>🧱 Responsive Masonry Layout</h4>
-                        <p>Adaptive masonry grid that reorganizes semester cards across phone, tablet, and desktop widths for optimal information density.</p>
-                    </div>
-                    <div class="concept">
-                        <h4>📄 PDF Transcript Export</h4>
-                        <p>Professional-grade transcript generation with formatted tables, university branding, and detailed per-semester breakdowns.</p>
-                    </div>
-                </div>
-
-                <div class="project-tech">
-                    <span class="tech-tag">Flutter</span>
-                    <span class="tech-tag">Dart</span>
-                    <span class="tech-tag">fl_chart</span>
-                    <span class="tech-tag">PDF Generation</span>
-                    <span class="tech-tag">Masonry Layout</span>
-                    <span class="tech-tag">Forecasting Algorithm</span>
-                    <span class="tech-tag">Responsive Design</span>
-                </div>
-
-                <div class="project-links">
-                    <a href="https://github.com/zaintahir2025/cgpa-calculator" target="_blank" class="project-link">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                        Source Code
-                    </a>
-                    <a href="https://zaintahir2025.github.io/cgpa-calculator/" target="_blank" class="project-link project-link-live">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
-                        Live Demo
-                    </a>
-                </div>
-            </article>
-
-            <!-- Project 5: Hangman Pro -->
-            <article class="project-card" id="project-hangman">
-                <div class="project-header">
-                    <div class="project-number">05</div>
-                    <div class="project-meta">
-                        <span class="project-category">Gaming & Graphics</span>
-                        <span class="project-platform">Mobile · Web · Desktop</span>
-                    </div>
-                </div>
-                <h3 class="project-title">Hangman Pro — Custom Graphics Game</h3>
-                <p class="project-description">A high-performance cross-platform Flutter game showcasing custom programmatic graphics, responsive layouts, and clean state management. No static assets — every UI element is rendered programmatically for maximum flexibility and performance.</p>
-                
-                <div class="concepts-grid">
-                    <div class="concept">
-                        <h4>🎨 Custom Programmatic Graphics</h4>
-                        <p>Fully custom-rendered UI elements built directly in Flutter using CustomPainter — no static image assets, ensuring complete flexibility and performance.</p>
-                    </div>
-                    <div class="concept">
-                        <h4>🎮 Clean Game State Management</h4>
-                        <p>Predictable state handling for game logic and UI updates, designed to scale beyond a simple game use case into production applications.</p>
-                    </div>
-                    <div class="concept">
-                        <h4>📐 Responsive Layout System</h4>
-                        <p>Adaptive layouts that scale seamlessly across phones, tablets, and different screen resolutions with consistent gameplay experience.</p>
-                    </div>
-                    <div class="concept">
-                        <h4>⚡ Smooth Animations</h4>
-                        <p>Real-time state updates with smooth animations, modern UI, and a device-agnostic design that works across all platforms.</p>
-                    </div>
-                </div>
-
-                <div class="project-tech">
-                    <span class="tech-tag">Flutter</span>
-                    <span class="tech-tag">Dart</span>
-                    <span class="tech-tag">CustomPainter</span>
-                    <span class="tech-tag">State Management</span>
-                    <span class="tech-tag">Responsive Design</span>
-                    <span class="tech-tag">Animations</span>
-                    <span class="tech-tag">Cross-Platform</span>
-                </div>
-
-                <div class="project-links">
-                    <a href="https://github.com/zaintahir2025/hangman-pro" target="_blank" class="project-link">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                        Source Code
-                    </a>
-                    <a href="https://zaintahir2025.github.io/hangman-pro/" target="_blank" class="project-link project-link-live">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
-                        Live Demo
-                    </a>
-                </div>
-            </article>
-
-            <!-- Project 6: Budget OS -->
-            <article class="project-card" id="project-budget">
-                <div class="project-header">
-                    <div class="project-number">06</div>
-                    <div class="project-meta">
-                        <span class="project-category">Finance & Security</span>
-                        <span class="project-platform">Mobile · Web · Desktop</span>
-                    </div>
-                </div>
-                <h3 class="project-title">Budget OS — Finance Ecosystem</h3>
-                <p class="project-description">A comprehensive personal finance platform that goes beyond basic calculations. Budget OS offers intelligent spending analysis through a custom decision engine, offline-first performance with Hive, cloud sync with Firestore, and secure PDF report generation.</p>
-                
-                <div class="concepts-grid">
-                    <div class="concept">
-                        <h4>🗄️ Hybrid Database Architecture</h4>
-                        <p>Hive for instant local access and offline-first performance. Cloud Firestore for reliable cross-device synchronization and data backup.</p>
-                    </div>
-                    <div class="concept">
-                        <h4>🧠 Custom Decision Engine</h4>
-                        <p>Proprietary logic evaluating spending patterns against income — helping users make informed financial decisions instead of just tracking numbers.</p>
-                    </div>
-                    <div class="concept">
-                        <h4>📄 PDF Report Generation</h4>
-                        <p>Automatically generated PDF reports with detailed financial insights, designed for long-term tracking and professional review.</p>
-                    </div>
-                    <div class="concept">
-                        <h4>🔒 Firebase Security</h4>
-                        <p>Firebase Authentication with strong data protection protocols. User data is isolated, validated, and securely stored with Firestore security rules.</p>
-                    </div>
-                </div>
-
-                <div class="project-tech">
-                    <span class="tech-tag">Flutter</span>
-                    <span class="tech-tag">Dart</span>
-                    <span class="tech-tag">Firebase</span>
-                    <span class="tech-tag">Firestore</span>
-                    <span class="tech-tag">Hive</span>
-                    <span class="tech-tag">PDF Generation</span>
-                    <span class="tech-tag">Firebase Auth</span>
-                    <span class="tech-tag">Decision Engine</span>
-                    <span class="tech-tag">Offline-First</span>
-                </div>
-
-                <div class="project-links">
-                    <a href="https://github.com/zaintahir2025/budget-os-app" target="_blank" class="project-link">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                        Source Code
-                    </a>
-                    <a href="https://zaintahir2025.github.io/budget-os-app/" target="_blank" class="project-link project-link-live">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
-                        Live Demo
-                    </a>
-                </div>
-            </article>
-
-            <!-- Project 7: Embrace -->
-            <article class="project-card" id="project-embrace">
-                <div class="project-header">
-                    <div class="project-number">07</div>
-                    <div class="project-meta">
-                        <span class="project-category">Health & Privacy</span>
-                        <span class="project-platform">Mobile · Web · Desktop</span>
-                    </div>
-                </div>
-                <h3 class="project-title">Embrace — Private Journaling Ecosystem</h3>
-                <p class="project-description">A high-performance journaling ecosystem focused on privacy, emotional insight, and offline-first reliability. Combines biometric security, mood analysis with keyword detection, heatmap visualizations, and a refined Material 3 UI for mindful self-reflection.</p>
-                
-                <div class="concepts-grid">
-                    <div class="concept">
-                        <h4>🔐 Dual-Layer Security</h4>
-                        <p>PIN and biometric authentication via local_auth 3.0.0, built on FragmentActivity for consistent behavior across modern Android versions.</p>
-                    </div>
-                    <div class="concept">
-                        <h4>😊 Emotion Detection Engine</h4>
-                        <p>Refined keyword analysis for emotion detection, Mood Heatmap 2.0 for long-term emotional trend tracking, and interactive weekly insights.</p>
-                    </div>
-                    <div class="concept">
-                        <h4>⚡ GetX Reactive Architecture</h4>
-                        <p>Reactive GetX state management ensuring smooth synchronization between mood analysis logic and UI components with minimal boilerplate.</p>
-                    </div>
-                    <div class="concept">
-                        <h4>🗄️ Optimized SQLite Layer</h4>
-                        <p>sqflite-powered offline-first persistence with optimized queries for fast access to long-term historical emotional data.</p>
-                    </div>
-                    <div class="concept">
-                        <h4>🧱 Masonry Journal Feed</h4>
-                        <p>FlutterStaggeredGridView for dynamic masonry-style journal layouts with custom fade transitions for a calm navigation experience.</p>
-                    </div>
-                    <div class="concept">
-                        <h4>🎨 Theme System</h4>
-                        <p>Centralized theme controller with Soft Lavender (light) and Deep Midnight (dark) modes — seamless switching with Material 3 design tokens.</p>
-                    </div>
-                </div>
-
-                <div class="project-tech">
-                    <span class="tech-tag">Flutter</span>
-                    <span class="tech-tag">Dart</span>
-                    <span class="tech-tag">GetX</span>
-                    <span class="tech-tag">SQLite</span>
-                    <span class="tech-tag">local_auth</span>
-                    <span class="tech-tag">Material 3</span>
-                    <span class="tech-tag">StaggeredGridView</span>
-                    <span class="tech-tag">Biometric Auth</span>
-                    <span class="tech-tag">Mood Analysis</span>
-                    <span class="tech-tag">Heatmap</span>
-                </div>
-
-                <div class="project-links">
-                    <a href="https://github.com/zaintahir2025/embrace-app" target="_blank" class="project-link">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                        Source Code
-                    </a>
-                    <a href="https://zaintahir2025.github.io/embrace-app/" target="_blank" class="project-link project-link-live">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
-                        Live Demo
-                    </a>
-                </div>
-            </article>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="section section-dark" id="contact">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">04 — Contact</span>
-                <h2 class="section-title">Let's Build Something<br>Together</h2>
-                <p class="section-subtitle">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
-            </div>
-            <div class="contact-grid">
-                <a href="https://github.com/zaintahir2025" target="_blank" class="contact-card">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                    <h3>GitHub</h3>
-                    <p>zaintahir2025</p>
-                </a>
-                <a href="mailto:zaintahir2025@gmail.com" class="contact-card">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                    <h3>Email</h3>
-                    <p>Get in touch</p>
-                </a>
-                <a href="https://linkedin.com" target="_blank" class="contact-card">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-                    <h3>LinkedIn</h3>
-                    <p>Connect with me</p>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <span class="footer-logo">
-                    <span class="logo-bracket">&lt;</span>ZT<span class="logo-bracket">/&gt;</span>
-                </span>
-                <p>Designed & Built by Zain Tahir © 2025</p>
-                <p class="footer-note">Built with passion for Flutter 💙</p>
-            </div>
-        </div>
-    </footer>
 
     <script src="script.js"></script>
 </body>
